@@ -1,4 +1,4 @@
-<h1 class="relative text-3xl font-bold left-1/2" id="DashboardTitle">Your Dashboard</h1>
+{{!-- <h1 class="relative text-3xl font-bold left-1/2" id="DashboardTitle">Your Dashboard</h1>
 <div class='absolute bg-slate-500 h-full w-1/12'>
         <ul class="absolute p-0 list-none text-center m-0">
             <li>
@@ -12,7 +12,7 @@
                 <a
                 target="_blank"
                 rel="noreferrer"
-                href="/user/login"
+                href="/calender"
                 class="block leading-8 border-black border-2 rounded my-5"
                 >Calender
                 </a>
@@ -32,16 +32,62 @@
                 </a>
             </li>
         </ul>
+    </div> --}}
+
+    <div class="flex flex-col items-center justify-center mt-32" x-cloak x-data="appData()" x-init="appInit()">
+    <div class="flex flex-col">
+
+        <nav class="flex justify-around py-4 bg-white/80
+            backdrop-blur-md shadow-md w-full
+            fixed top-0 left-0 right-0 z-10">
+
+            <div class="flex items-center">
+                <a class="cursor-pointer text-xl font-bold">
+                    My Dashboard
+                </a>
+            </div>
+
+            <div class="items-center hidden space-x-8 lg:flex">
+                <a class="flex text-gray-600 hover:text-blue-500
+                    cursor-pointer transition-colors duration-300">
+                    Home
+                </a>
+
+                <a class="flex text-gray-600 hover:text-blue-500
+                    cursor-pointer transition-colors duration-300">
+                    Calender
+                </a>
+
+                <a class="flex text-gray-600 hover:text-blue-500
+                    cursor-pointer transition-colors duration-300">
+                    Statistics
+                </a>
+
+                <a class="flex text-gray-600 hover:text-blue-500
+                    cursor-pointer transition-colors duration-300">
+                    About Us
+                </a>
+            </div>
+
+                <a class="flex text-gray-600 
+                    cursor-pointer transition-colors duration-300
+                    font-semibold text-blue-600">
+
+                    Login
+                </a>
+            </div>
+        </nav>
     </div>
+
     <div class="relative left-52">
-	    <h3 
+	    <h3
         class="input p-4"
         >Enter what you ate
         </h3>
 
 	    <input 
         type="text" 
-        class="p-4 border-black border-2 rounded-lg" 
+        class="p-4 border-black border-2 rounded-md" 
         placeholder="Meal" 
         id="meal">
 
@@ -52,17 +98,28 @@
 
 	    <input 
         type="text" 
-        class="p-4 border-black border-2 rounded-lg" 
+        class="p-4 border-black border-2 rounded-md" 
         placeholder="Calories" 
         id="calories">
 
         <button 
         type="button" 
-        class="relative bg-slate-500 border-black border-2 rounded-lg m-2" 
+        class="relative bg-emerald-200 border-black 
+            border-2 rounded m-4 h-8 w-16" 
         onclick="getInfo()" 
         id="button">
         ENTER
         </button>
+
+        <div
+        class="absolute left-1/4 top-1/4">
+            <h1>Your Calorie Total</h1>
+        </div>
+
+        <div
+        class="absolute left-1/2 top-1/4">
+            <h1>Instructions</h1>
+        </div>
 	</div>
 
 
