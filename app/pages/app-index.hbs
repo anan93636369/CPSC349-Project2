@@ -34,10 +34,10 @@
         </ul>
     </div> --}}
 
-    <div class="flex flex-col items-center justify-center mt-32" x-cloak x-data="appData()" x-init="appInit()">
+    <div class="flex flex-col items-center justify-center mt-24" x-cloak x-data="appData()" x-init="appInit()">
     <div class="flex flex-col">
 
-        <nav class="flex justify-around py-4 bg-white/80
+        <nav class="flex justify-around py-8 bg-white/80
             backdrop-blur-md shadow-md w-full
             fixed top-0 left-0 right-0 z-10">
 
@@ -73,13 +73,13 @@
                     cursor-pointer transition-colors duration-300
                     font-semibold text-blue-600">
 
-                    Login
+                    Logout
                 </a>
             </div>
         </nav>
     </div>
 
-    <div class="relative left-52">
+    <div class="relative bg-gray-100 p-14 pb-28">
 	    <h3
         class="input p-4"
         >Enter what you ate
@@ -112,13 +112,21 @@
         </button>
 
         <div
-        class="absolute left-1/4 top-1/4">
-            <h1>Your Calorie Total</h1>
+        class="absolute left-1/4 top-16 border-black 
+            border-2 px-32 pb-48 pt-3 bg-gray-200">
+            <h1>Statistics</h1>
         </div>
 
         <div
-        class="absolute left-1/2 top-1/4">
-            <h1>Instructions</h1>
+        class="absolute left-1/2 top-16 border-black 
+            border-2 px-32 pb-48 pt-3 bg-gray-200">
+            <h1>Statistics</h1>
+        </div>
+
+        <div
+        class="absolute left-3/4 top-16 border-black 
+            border-2 px-32 pb-48 pt-3 bg-gray-200">
+            <h1>Statistics</h1>
         </div>
 	</div>
 
