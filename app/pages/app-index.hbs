@@ -1,4 +1,68 @@
-<h1 class="text-3xl font-bold underline text-purple-700">Welcome to the app!!!!!</h1>
-<div>[[ Dynamic Remake code goes here]]</div>
-<br><br>
-<a href="https://docs.remaketheweb.com/a-simple-example-app/">Try a simple todo app</a>
+<h1 class="relative text-3xl font-bold left-1/2" id="DashboardTitle">Your Dashboard</h1>
+<div class='absolute bg-slate-500 h-full w-1/12'>
+        <ul class="absolute p-0 list-none text-center m-0">
+            <li>
+                <a
+                target="_blank"
+                rel="noreferrer"
+                href="/user/login"
+                class="block leading-8 border-black border-2 rounded my-5 right-1"
+                >New Entry
+                </a>
+                <a
+                target="_blank"
+                rel="noreferrer"
+                href="/user/login"
+                class="block leading-8 border-black border-2 rounded my-5"
+                >Calender
+                </a>
+                <a
+                target="_blank"
+                rel="noreferrer"
+                href="/user/login"
+                class="block leading-8 border-black border-2 rounded my-5"
+                >About Me
+                </a>
+                <a
+                target="_blank"
+                rel="noreferrer"
+                href="/user/login"
+                class="block leading-8 border-black border-2 rounded my-5"
+                >Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="relative left-52">
+	    <h3 
+        class="input p-4"
+        >Enter what you ate
+        </h3>
+
+	    <input 
+        type="text" 
+        class="p-4 border-black border-2 rounded-lg" 
+        placeholder="Meal" 
+        id="meal">
+
+	    <h3 
+        class="input p-4">
+        Enter the amount of calories
+        </h3>
+
+	    <input 
+        type="text" 
+        class="p-4 border-black border-2 rounded-lg" 
+        placeholder="Calories" 
+        id="calories">
+
+        <button 
+        type="button" 
+        class="relative bg-slate-500 border-black border-2 rounded-lg m-2" 
+        onclick="getInfo()" 
+        id="button">
+        ENTER
+        </button>
+	</div>
+
+
