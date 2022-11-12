@@ -1,34 +1,19 @@
-# Create an app! 🪂
+# Group 6 CPSC349 Project2 🪂
 
-Create your first Remake app:
-
-```
-npm install -g remake
-remake create your-remake-app
-```
-
-Now you have a Trello clone app! 🤩
+Jin Lu jlu28@csu.fullerton.edu Worked on: set up the project, coding/styling with signup/login pages.
+Mike Ball 
+Nathan Kim
+Jason Wong 
 
 # Get your app running! 🛵
 
 Use the following commands to start the development server:
 
 ```
-cd your-remake-app
-npm run dev
+npm install
+npm start
 ```
 
-# Learn how Remake works! 👩‍💻👨‍💻
-
-Look in the "app" directory to see all the code for the Trello clone app:
-
-Inside the `/app/pages` directory you'll find the `app-index.hbs` file.
-
-This file includes the entire Trello clone app! 👍
-
-# Start from scratch 👨‍🎨👩‍🎨
-
-If you want to start from scratch, follow the instructions in /app/README.md
 
 # Full Remake Docs
 
