@@ -1,8 +1,11 @@
 # Group 6 CPSC349 Project2 🪂
 
-Jin Lu jlu28@csu.fullerton.edu Worked on: set up the project, coding/styling with signup/login pages.
-Mike Ball 
-Nathan Kim
+Jin Lu jlu28@csu.fullerton.edu Worked on: set up the project, coding/styling with signup/login pages.  
+  
+Mike Ball      
+
+Nathan Kim     
+
 Jason Wong 
 
 # Get your app running! 🛵
