@@ -1,7 +1,27 @@
-<form action="/user/signup" method="post">
-  <h1>Sign up</h1>
-  <input type="text" name="username" placeholder="Username" required>
-  <input type="email" name="email" placeholder="Email" required>
-  <input type="password" name="password" placeholder="Password" required>
-  <button type="submit">Sign up</button>
-</form>
+<div class="flex h-full items-center justify-center">
+  <div class="w-full max-w-md">
+    <div>
+      <h1 class="mt-10 text-center text-3xl font-bold text-yellow-800">Create Your taskr Account</h1>
+    </div>
+    <form class="mt-8" action="/user/signup" method="post">
+      <div class="mt-9 rounded-md shadow-sm">
+        <div>
+          <label class="sr-only">Username</label>
+          <input name="username" type="text" required class="relative block w-full rounded-t-lg rounded-b-lg border border-gray-900 px-3 py-2 text-black placeholder-gray-500  sm:text-sm" placeholder="Username">
+        </div>
+        <div class="mt-5">
+          <label class="sr-only">Email</label>
+          <input name="password" type="email" required class="relative block w-full rounded-t-lg rounded-b-lg border border-gray-900 px-3 py-2 text-black placeholder-gray-500  sm:text-sm" placeholder="Email">
+        </div>
+        <div class="mt-5">
+          <label class="sr-only">Password</label>
+          <input name="password" type="password" required class="relative block w-full rounded-t-lg rounded-b-lg border border-gray-900 px-3 py-2 text-black placeholder-gray-500  sm:text-sm" placeholder="Password">
+        </div>
+      </div>
+      <div>
+        <button type="submit" class="mt-10 justify-center relative flex w-full px-5 py-2 bg-yellow-100 text-yellow-900 font-bold leading-tight rounded shadow-md hover:bg-yellow-400 hover:shadow-lg transition duration-150 ease-in-out">SIGN UP</button>
+      </div>
+    </form>
+  </div>
+</div>
+
