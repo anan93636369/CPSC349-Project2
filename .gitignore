@@ -6,6 +6,13 @@ npm-debug.log
 app/data/database
 app/data/uploads
 
+.remake
+{
+  "port": 3000,
+  "sessionSecret": "Y0ur N3w 535510n 53cr3t"
+}
+
+
 .env
 
 .cache/
