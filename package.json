@@ -13,7 +13,7 @@
     "remake-build": "npx esbuild _remake/client-side/index.js --bundle --minify --sourcemap=external --outdir=_remake/dist/remake/js --target=edge18 --format=iife --global-name=Remake && mv _remake/dist/remake/js/index.js _remake/dist/remake/js/remake.min.js && mv _remake/dist/remake/js/index.js.map _remake/dist/remake/js/remake.min.js.map && echo '//# sourceMappingURL=remake.min.js.map' >> _remake/dist/remake/js/remake.min.js",
     "test": "ava",
     "tailwind": "tailwindcss -i ./src/input.css -o ./app/assets/css/main.css --watch --poll",
-    "start" : "npm-run-all --parallel dev tailwind"
+    "start": "npm-run-all --parallel dev tailwind"
   },
   "nodemonConfig": {
     "ignore": [
@@ -47,6 +47,7 @@
     "cookie-parser": "^1.4.4",
     "cross-env": "^7.0.3",
     "crostini": "^1.0.3",
+    "daisyui": "^2.39.1",
     "deep-extend": "^0.6.0",
     "deepdash": "^5.3.7",
     "directory-tree": "^2.2.3",
@@ -57,7 +58,7 @@
     "extract-zip": "^1.6.7",
     "glob": "^7.1.4",
     "handlebars": "^4.7.6",
-    "handlebars-helpers": "^0.10.0",
+    "handlebars-helpers": "^0.9.8",
     "is-valid-domain": "0.0.17",
     "jsdom": "^16.5.3",
     "jsonfile": "^5.0.0",
@@ -70,7 +71,7 @@
     "mysql": "^2.18.1",
     "nanoid": "^2.0.3",
     "normalize-url": "^5.3.0",
-    "passport": "^0.4.0",
+    "passport": "^0.6.0",
     "passport-local": "^1.0.0",
     "path-match": "^1.2.4",
     "rimraf": "3.0.0",
@@ -81,7 +82,7 @@
   },
   "devDependencies": {
     "@ava/babel": "^1.0.1",
-    "ava": "^3.15.0",
+    "ava": "^5.0.1",
     "esbuild": "^0.14.9",
     "husky": "^6.0.0",
     "nodemon": "^2.0.13",
