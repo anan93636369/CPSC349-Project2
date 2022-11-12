@@ -2,7 +2,7 @@
 
 Jin Lu jlu28@csu.fullerton.edu Worked on: set up the project, coding/styling with signup/login pages.  
   
-Mike Ball      
+Mike Ball MikeBall@csu.fullerton.edu Worked on: Index.hbs, App-index.hbs, wireframing   
 
 Nathan Kim     
 
