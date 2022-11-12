@@ -1,8 +1,66 @@
-<h1>Welcome to my app!</h1>
-<ul>
-  {{#if currentUser}}
-    <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
-  {{else}}
-    <li><a href="/user/signup">Sign up for an account</a></li>
-  {{/if}}
-</ul>
+{{!-- nav bar --}}
+<div class="flex flex-col items-center justify-around mt-24" x-data="appData()" x-init="appInit()"></div>
+<nav class="w-full fixed container mx-auto p-6 backdrop-blur-md shadow-md bg-white/80 py-8 top-0 left-0 right-0 z-10">
+<!-- Flex Container -->
+  <div class="flex items-center justify-between">
+  <!-- Logo -->
+    <div class = "pt-2 hover:text-brightRedLight text-2xl">
+      Taskr
+    </div>
+  <!-- Menu Items -->
+    <div class=" hidden md:flex space-x-6">
+      <a href = "#" class="hover:text-darkGrayishBlue">About Us</a>
+      <a class="nav__button hover:text-darkGrayishBlue" href="/user/login">Log in</a>
+    </div>
+      <ul>
+        {{#if currentUser}}
+          <li><a href="/{{currentUser.details.username}}" class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseLine">Go to your dashboard</a></li>
+        {{else}}
+          <li><a href="/user/signup" class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseLine">Sign up for an account</a></li>
+        {{/if}}
+      </ul>
+  </div>
+</nav>
+</div>
+
+<section id="hero">
+  <!-- Flex Container -->
+  <div class="container flex flex-col 
+  md:flex-row items-center px-6 mx-auto mt10 space-y-0 md:space-y-0">
+  
+  <!-- left item -->
+    <div class ="flex flex-col mb-32 space-y-12 md:w-1/2 py-5">
+      <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+        Planning Made Easy
+      </h1>
+
+       <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">
+      A streamlined tool used to created simple lesson plans
+       </p>
+
+       <div class="flex justify-center md:justify-start">
+        <ul>
+          {{#if currentUser}}
+            <li><a href="/{{currentUser.details.username}}" class="hidden md:block p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseLine">Dashboard</a></li>
+          {{else}}
+            <li><a href="/user/signup" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full baseLine">Sign up</a></li>
+          {{/if}}
+        </ul>
+       </div>
+    </div>
+
+      <div class="flex flex-col mb-32 space-y-12 md:w-1/2 py-5">
+        <h2 class = "max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+          What you can do with our tool:
+        </h2>
+      </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+  
